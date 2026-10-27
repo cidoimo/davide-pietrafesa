@@ -1,34 +1,33 @@
 ---
 layout: about
-title: about
+title: chi sono
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Bioinformatico, curioso, inventore di misteri.
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: true
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Università di Roma "Tor Vergata"</p>
+    <p>Roma · Bilbao</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+selected_papers: true
+social: true
 
 announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  enabled: true
+  scrollable: true
+  limit: 5
 
 latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  enabled: false
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Ciao, sono Davide! Passo le giornate a guardare molecole che si muovono: proteine, RNA e membrane che costruisco e faccio vivere al computer, per capire come funzionano e, quando fanno danni, come fermarle.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Mi occupo di **bioinformatica strutturale**. Lavoro con modelli 3D (AlphaFold, RoseTTAFoldNA), docking e simulazioni di dinamica molecolare sui supercalcolatori del CINECA. Ultimamente il mio chiodo fisso è la proteina **HuR** e i piccoli frammenti di RNA, gli _aptameri_, che potrebbero diventare un modo nuovo per bloccarla. Ho fatto il dottorato a Tor Vergata e ho passato sei mesi al CIC bioGUNE di Bilbao a sporcarmi le mani in laboratorio, tra colture cellulari, qPCR e Western blot.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Quando spengo il supercalcolatore, scrivo **[cene con delitto]({{ '/cene-con-delitto/' | relative_url }})**: storie da giocare a tavola con gli amici, tra personaggi sopra le righe, indizi nascosti e un colpevole da smascherare prima del dolce. Le trovi pronte da stampare sul mio [Etsy](https://www.etsy.com/it/people/ym0bru7jydreew7f).
+
+Parlo italiano, inglese e un buon spagnolo da tapas. Se vuoi parlare di scienza, di gialli o di tutte e due le cose, scrivimi.

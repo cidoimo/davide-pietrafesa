@@ -3,24 +3,22 @@
 # -----------------------------------------------------------------------------
 
 title: blank # the website title (if blank, full name will be used instead)
-first_name: You
-middle_name: R.
-last_name: Name
+first_name: Davide
+middle_name:
+last_name: Pietrafesa
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
-description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  Il modo più rapido per raggiungermi è l'email. Per le cene con delitto scrivimi pure su Etsy.
+description: >
+  Bioinformatico e autore di cene con delitto. Modellazione molecolare, dinamica molecolare e aptameri a RNA.
 footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
-lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+  Bioinformatica di giorno, misteri di sera.
+keywords: bioinformatica, dinamica molecolare, modellazione molecolare, aptameri, HuR, cene con delitto
+lang: it # the language of your site (for example: en, fr, cn, ru, etc.)
+icon: 🧬 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 apple_touch_icon: # image name in /assets/img/ (or a rooted path / absolute URL) used for iOS home-screen bookmarks; needs a real 180x180 PNG, since Safari ignores the emoji favicon above. Left empty, iOS falls back to a screenshot of the page.
 
-url: https://alshedivat.github.io # the base hostname & protocol for your site
-baseurl: /al-folio # the subpath of your site, e.g. /blog/. Leave blank for root
+url: https://cidoimo.github.io # the base hostname & protocol for your site
+baseurl: /davide-pietrafesa # the subpath of your site, e.g. /blog/. Leave blank for root
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 back_to_top: true # set to false to disable the back to top button
@@ -99,7 +97,7 @@ navbar_fixed: true
 footer_fixed: true
 search_enabled: true
 socials_in_search: true
-posts_in_search: true
+posts_in_search: false
 bib_search: true
 
 # Dimensions
@@ -166,24 +164,14 @@ giscus:
   lang: en
 
 # Disqus comments (DEPRECATED)
-disqus_shortname: al-folio # put your disqus shortname
+disqus_shortname: # put your disqus shortname
 # https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
 # External sources.
 # If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
 # Optional: Set default categories and tags for posts from each source.
-external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
-    categories: [external-posts]
-    tags: [medium]
-  - name: Google Blog
-    posts:
-      - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
-        published_date: 2024-05-14
-    categories: [external-posts]
-    tags: [google]
+external_sources: []
 
 # -----------------------------------------------------------------------------
 # Newsletter
@@ -230,10 +218,8 @@ kramdown:
 # Includes & excludes
 include: ["_pages"]
 exclude:
-  - AGENTS.md
   - al-folio-upgrade-report.md
   - bin/
-  - CLAUDE.md
   - Dockerfile
   - docker-compose.yml
   - docker-compose-slim.yml
@@ -244,12 +230,66 @@ exclude:
   - lighthouse_results/
   - package.json
   - package-lock.json
-  - _pages/about_einstein.md
   - purgecss.config.js
   - README.md
+  - requirements.txt
   - readme_preview/
   - gems/
   - migrations/
+  # Contenuti di esempio del tema rimasti nel repo: non vengono pubblicati
+  - _posts/
+  - _books/
+  - _teachings/
+  - _news/announcement_1.md
+  - _news/announcement_2.md
+  - _news/announcement_3.md
+  - _projects/1_project.md
+  - _projects/2_project.md
+  - _projects/3_project.md
+  - _projects/4_project.md
+  - _projects/5_project.md
+  - _projects/6_project.md
+  - _projects/7_project.md
+  - _projects/8_project.md
+  - _projects/9_project.md
+  - _pages/about_einstein.md
+  - _pages/blog.md
+  - _pages/books.md
+  - _pages/dropdown.md
+  - _pages/plugins.md
+  - _pages/profiles.md
+  - _pages/repositories.md
+  - _pages/teaching.md
+  - AGENTS.md
+  - CLAUDE.md
+  - test/
+  - assets/jupyter/
+  - assets/audio/
+  - assets/video/
+  - assets/plotly/
+  - assets/html/
+  - assets/bibliography/
+  - assets/pdf/
+  - assets/json/table_data.json
+  - assets/img/book_covers/
+  - assets/img/publication_preview/
+  - assets/img/rhino.png
+  - assets/img/prof_pic_color.png
+  - assets/img/template_error.png
+  - assets/img/star-history-dark.svg
+  - assets/img/star-history-light.svg
+  - assets/img/1.jpg
+  - assets/img/2.jpg
+  - assets/img/3.jpg
+  - assets/img/4.jpg
+  - assets/img/5.jpg
+  - assets/img/6.jpg
+  - assets/img/7.jpg
+  - assets/img/8.jpg
+  - assets/img/9.jpg
+  - assets/img/10.jpg
+  - assets/img/11.jpg
+  - assets/img/12.jpg
   - vendor
 keep_files:
   - CNAME
@@ -356,8 +396,8 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Pietrafesa]
+  first_name: [Davide, D.]
 
   style: apa
   locale: en
@@ -386,7 +426,7 @@ enable_publication_badges:
   altmetric: true # Altmetric badge (Customization options: https://badge-docs.altmetric.com/index.html)
   dimensions: true # Dimensions badge (Customization options: https://badge.dimensions.ai/)
   google_scholar: true # Google Scholar badge (https://scholar.google.com/intl/en/scholar/citations.html)
-  inspirehep: true # Inspire HEP badge (https://help.inspirehep.net/knowledge-base/citation-metrics/)
+  inspirehep: false # Inspire HEP badge (https://help.inspirehep.net/knowledge-base/citation-metrics/)
 
 # Filter out certain bibtex entry keywords used internally from the bib output
 filtered_bibtex_keywords:
@@ -479,8 +519,8 @@ enable_masonry: true # enables automatic project cards arrangement
 enable_math: true # enables math typesetting (uses MathJax)
 enable_tooltips: false # enables automatic tooltip links generated for each section titles on pages and posts
 enable_darkmode: true # enables switching between light/dark modes
-enable_navbar_social: false # enables displaying social links in the navbar on the about page
-enable_project_categories: true # enables categorization of projects into multiple categories
+enable_navbar_social: true # enables displaying social links in the navbar on the about page
+enable_project_categories: false # enables categorization of projects into multiple categories
 enable_medium_zoom: true # enables image zoom feature (as on medium.com)
 enable_progressbar: true # enables a horizontal progress bar linked to the vertical scroll position
 enable_video_embedding: false # enables video embedding for bibtex entries. If false, the button opens the video link in a new window.
